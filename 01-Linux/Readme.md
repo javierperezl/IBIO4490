@@ -176,7 +176,11 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
+Grep sirve paraknndsagkngk
+
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
+
+Para ejecutar Python
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
  
