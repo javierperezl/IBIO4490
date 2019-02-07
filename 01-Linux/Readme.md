@@ -176,7 +176,7 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
-Grep sirve paraknndsagkngk
+Grep sirve 
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
