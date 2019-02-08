@@ -188,7 +188,7 @@ Busca en la maquina el interprete Python para correr el script.
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
  
-![p4] (https://github.com/javierperezl/IBIO4490/raw/master/01-Linux/p4.jpg "p4")
+![p4] (p4.jpg "p4")
 
 El tamaño en disco de la carpeta en 74128 KB, es decir 73MB. En total hay 500 imagenes.
 
@@ -218,3 +218,10 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 
 
 
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
