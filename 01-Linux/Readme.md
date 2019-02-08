@@ -184,11 +184,11 @@ Busca en la maquina el interprete Python para correr el script.
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
 
-![] (p3.jpg)
+![p3] (https://github.com/javierperezl/IBIO4490/raw/master/01-Linux/p3.jpg "p3")
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
  
-![] (p4.jpg)
+![p4] (https://github.com/javierperezl/IBIO4490/raw/master/01-Linux/p4.jpg "p4")
 
 El tamaño en disco de la carpeta en 74128 KB, es decir 73MB. En total hay 500 imagenes.
 
