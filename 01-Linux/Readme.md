@@ -176,16 +176,22 @@ See [here](ssh.md) for different types of SSH connection with respect to your OS
 
 1. What is the ``grep``command?
 
-Grep sirve 
+Grep sirve para buscar una expresion en un archivo linea por linea que coincida con un patron dado y lo imprima.
 
 2. What is the meaning of ``#!/bin/python`` at the start of scripts?
 
-Para ejecutar Python
+Busca en la maquina el interprete Python para correr el script. 
 
 3. Download using ``wget`` the [*bsds500*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500) image segmentation database, and decompress it using ``tar`` (keep it in you hard drive, we will come back over this data in a few weeks).
+
+![] (p3.jpg)
  
 4. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
  
+![] (p4.jpg)
+
+El tamaño en disco de la carpeta en 74128 KB, es decir 73MB. En total hay 500 imagenes.
+
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
 
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
