@@ -193,7 +193,12 @@ Busca en la maquina el interprete Python para correr el script.
 El tamaño en disco de la carpeta en 74128 KB, es decir 73MB. En total hay 500 imagenes.
 
 5. What are all the different resolutions? What is their format? Tip: use ``awk``, ``sort``, ``uniq`` 
+ Se ejecuta el comando:  
+ identify -format '%w %h\n ' *.jpg  | sort | uniq
 
+![P5](https://github.com/javierperezl/IBIO4490/raw/master/01-Linux/p5.png "P5")
+ 
+ 
 6. How many of them are in *landscape* orientation (opposed to *portrait*)? Tip: use ``awk`` and ``cut``
  
 7. Crop all images to make them square (256x256) and save them in a different folder. Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
