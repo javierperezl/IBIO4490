@@ -11,17 +11,31 @@ import matplotlib.image as mpimg
 
 from PIL import Image, ImageDraw
 
-from resizeimage import resizeimage
-
 import os
 
 import urllib
 import zipfile
 
 import time
+
+# [2] 
+#tomado de https://stackoverflow.com/questions/12332975/installing-python-module-within-code
+def install_and_import(package): 
+    import importlib
+    try:
+        importlib.import_module(package)
+        print("Paquete encontrado: "+package)
+    except ImportError:
+        print("Instalando paquete: "+package)
+        import pip
+        pip.main(['install', package])
+    finally:
+        globals()[package] = importlib.import_module(package)
+
+install_and_import('resizeimage')
+from resizeimage import resizeimage
+
 start_time = time.time()
-
-
 
 if not os.path.exists('dataset'): #si no existe el dataset lo descarga
     urlD = 'https://www.dropbox.com/s/3ptvx317p52f6d6/AwA2.zip?dl=1'
@@ -108,6 +122,7 @@ plt.show()
 
 #References
 #[1] Python Software Foundation. python-resize-image 1.1.18 https://pypi.org/project/python-resize-image/
+#[2] stackoverflow https://stackoverflow.com/questions/12332975/installing-python-module-within-code
 
 
 
