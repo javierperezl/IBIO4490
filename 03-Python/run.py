@@ -20,20 +20,20 @@ import time
 
 # [2] 
 #tomado de https://stackoverflow.com/questions/12332975/installing-python-module-within-code
-def install_and_import(package): 
+def install_and_import(package, lib): 
     import importlib
     try:
-        importlib.import_module(package)
+        importlib.import_module(lib)
         print("Paquete encontrado: "+package)
     except ImportError:
         print("Instalando paquete: "+package)
         import pip
         pip.main(['install', package])
     finally:
-        globals()[package] = importlib.import_module(package)
+        print("Importando paquete: "+package)
+        globals()[package] = importlib.import_module(lib)
 
-install_and_import('resizeimage')
-from resizeimage import resizeimage
+install_and_import('python-resize-image', 'resizeimage')
 
 start_time = time.time()
 
