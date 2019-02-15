@@ -18,6 +18,11 @@ import os
 import urllib
 import zipfile
 
+import time
+start_time = time.time()
+
+
+
 if not os.path.exists('dataset'): #si no existe el dataset lo descarga
     urlD = 'https://www.dropbox.com/s/3ptvx317p52f6d6/AwA2.zip?dl=1'
     urllib.request.urlretrieve (urlD, "AwA2.zip")
@@ -89,6 +94,7 @@ draw.text(xy=(100+256*1,120+256*2),text=labels[9],fill=(255,255,0))
 draw.text(xy=(100+256*2,120+256*2),text=labels[10],fill=(255,255,0))
 draw.text(xy=(100+256*3,120+256*2),text=labels[11],fill=(255,255,0))
 
+print("--- %s seconds ---" % (time.time() - start_time)) #time
 
 image.show() #muestra img
 
@@ -97,6 +103,8 @@ plt.figure()
 plt.imshow(imgBig)
 plt.show()
 """
+
+
 
 #References
 #[1] Python Software Foundation. python-resize-image 1.1.18 https://pypi.org/project/python-resize-image/
