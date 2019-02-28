@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Thu Feb 14 08:34:11 2019
@@ -32,6 +33,8 @@ def install_and_import(package, lib):
     finally:
         print("Importando paquete: "+package)
         globals()[package] = importlib.import_module(lib)
+
+install_and_import('python-resize-image', 'resizeimage')
 
 install_and_import('python-resize-image', 'resizeimage')
 
