@@ -172,7 +172,7 @@ def run(k=16, nxclass=10, numimtest = 10000, small_filter=True):
     import matplotlib.pyplot as plt
     from sklearn.metrics import confusion_matrix
     
-    #tomado de 
+    #tomado de https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html
     def plot_confusion_matrix(cm, classes,
                               normalize=False,
                               title='Confusion matrix',
